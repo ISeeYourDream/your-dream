@@ -8,8 +8,9 @@ function login(){
     if (log.value === "Admin" && pass.value === "1234"
         || log.value === "Gleb" && pass.value === "1111")
             return redirect();
-    else
+    else {
         log.value = "";
         pass.value = "";
         alert("Incorrect login or password!");
     }
+}
